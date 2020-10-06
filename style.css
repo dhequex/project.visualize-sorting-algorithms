@@ -1,0 +1,41 @@
+.spacer {
+  height: 250px;
+  width: auto;
+  background-color: rgb(253, 255, 253);
+}
+.rectangle1 {
+  height: 300px;
+  width: 400px;
+  background-color: rgb(243, 219, 6);
+  justify-content: center;
+  float: left;
+}
+.rectangle2 {
+  height: 200px;
+  width: 400px;
+  background-color: rgb(113, 177, 88);
+  justify-content: center;
+  float: left;
+}
+.rectangle3 {
+  height: 100px;
+  width: 400px;
+  background-color: rgb(51, 105, 204);
+  justify-content: center;
+  float: left;
+}
+.rectangle4 {
+  height: 50px;
+  width: 400px;
+  background-color: rgb(202, 42, 42);
+  justify-content: center;
+  float: left;
+}
+body {
+  height: 100%;
+  background-color: aqua;
+  font-family: "Courier New", Courier, monospace;
+  color: black;
+  font-size: 18px;
+  line-height: 20px;
+}
