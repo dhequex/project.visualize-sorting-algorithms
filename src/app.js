@@ -20,19 +20,11 @@ window.onload = () => {
     window.setInterval(insertionSort(visualArray), 2000);
   });
 
+  function sort() {}
+
   const arrayButton = document.createElement("button");
   arrayButton.className = "button";
   arrayButton.innerText = "Let's sort this out";
   arrayButton.addEventListener("click", () => {});
   document.body.prepend(arrayButton);
-
-  function changeTitle(event) {
-    event.preventDefault();
-    // console.log('What is an event?', event);
-  }
-
-  const form = document.querySelector("form");
-  document.addEventListener("DOMContentLoaded", () => {
-    form.onsubmit = changeTitle;
-  });
 };
