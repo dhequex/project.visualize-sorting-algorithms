@@ -1,44 +1,31 @@
+const InsertionSort = require("./Sort");
+
 window.onload = () => {
-  /* Example Code
-      The following is just some example code for you to play around with.
-      No need to keep this---it's just some code so you don't feel too lonely.
-*/
+  const InsertionSort = require("./Sort");
 
-  // How can we use require here if it's frontend? We can thank webpack.
-  const Sort = require("./Sort");
-
-  // A link to our styles!
   require("./index.css");
 
-  const sort = new Sort();
-  sort.sort();
+  window.addEventListener("load", () => {
+    const visualArray = [el5, el1, el4, el3, el2];
+
+    const el1 = document.getElementsById("r1");
+    const el2 = document.getElementsById("r2");
+    const el3 = document.getElementsById("r3");
+    const el4 = document.getElementsById("r4");
+    const el5 = document.getElementsById("r5");
+
+    let insertionSort = new InsertionSort();
+    let sortingVisual = insertionSort(visualArray);
+
+    window.setInterval(insertionSort(visualArray), 2000);
+  });
 
   const arrayButton = document.createElement("button");
-  arrayButton.className = "fig";
-  arrayButton.innerText = "Give me an Array";
-  arrayButton.addEventListener("mouseover", () => {
-    alert("define the array");
-  });
+  arrayButton.className = "button";
+  arrayButton.innerText = "Let's sort this out";
+  arrayButton.addEventListener("click", () => {});
   document.body.prepend(arrayButton);
 
-  function cresteArray(array) {
-    const container = document.createElement("div");
-    container.className = "box";
-    const textNode = document.createTextNode(slogan);
-    container.appendChild(textNode);
-    return container;
-  }
-
-  const title = createCheesyTitle(sort.returnValue("Re-Engineer Yourself"));
-  document.getElementById("title").appendChild(title);
-
-  /*
-    An simple example of how you can make your project a bit more
-    interactive, if you would like.
-
-    In our `index.html` page, we have a short form.
-    Here is the code that talks to it.
-  */
   function changeTitle(event) {
     event.preventDefault();
     // console.log('What is an event?', event);

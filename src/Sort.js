@@ -4,13 +4,13 @@ class InsertionSort {
   }
   sort(array) {
     for (let i = 1; i < array.length; i++) {
-      let one = array[i];
-      let oneDown = i - 1;
-      if (oneDown > -1 && one < array[oneDown]) {
-        array[oneDown + 1] = array[oneDown];
-        oneDown--;
+      let current = array[i];
+      let previous = i - 1;
+      if (previous > -1 && current < array[previous]) {
+        array[previous + 1] = array[previous];
+        previous--;
       }
-      array[oneDown + 1] = one;
+      array[previous + 1] = current;
     }
     return array;
   }
